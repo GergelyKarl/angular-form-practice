@@ -1,0 +1,24 @@
+.billing__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 60%;
+}
+
+.city__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.billing__zip {
+  width: 5%;
+  margin-bottom: 8px;
+}
+
+.billing__name {
+  margin-bottom: 8px;
+}
+
+.billing__comment {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,30 @@
+<form class="billing__form" [formGroup]="billingForm">
+  <mat-form-field class="billing__name">
+    <mat-label>Billing Name</mat-label>
+    <input matInput formControlName="name" />
+  </mat-form-field>
+
+  <div class="city__container">
+    <mat-form-field class="billing__zip">
+      <mat-label>Zip</mat-label>
+      <input matInput placeholder="ZIP" formControlName="zip" />
+    </mat-form-field>
+
+    <mat-form-field class="billing__city">
+      <mat-label>City</mat-label>
+      <input matInput placeholder="City" formControlName="city" />
+    </mat-form-field>
+
+    <mat-form-field class="billing__street">
+      <mat-label>Street</mat-label>
+      <input matInput placeholder="Street" formControlName="street" />
+    </mat-form-field>
+  </div>
+
+  <mat-form-field class="billing__comment">
+    <mat-label>Comment</mat-label>
+    <input matInput placeholder="Comment" formControlName="comment" />
+  </mat-form-field>
+</form>
+
+<button (click)="qwe(billingForm.value.billingInformation)">asdasd</button>
