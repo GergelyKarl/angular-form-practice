@@ -1,8 +1,29 @@
 :host {
-  width: 900px;
-  margin-left: 300px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.checkb {
-  margin-top: 50px;
+.container {
+  width: 700px;
+}
+
+.checkbox {
+  margin: 70px 0;
+}
+
+.saveBtn {
+  margin-top: 70px;
+  margin-right: -50px;
+}
+
+.btn__container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0;
+}
+
+.resetBtn {
+  margin-left: 20px;
 }

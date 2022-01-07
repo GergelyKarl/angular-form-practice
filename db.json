@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Termek1",
+      "quantity": 23,
+      "amountUnit": "kg"
+    },
+    {
+      "id": 2,
+      "productName": "Prod1",
+      "quantity": 34,
+      "amountUnit": "L"
+    },
+    {
+      "id": 3,
+      "productName": "Termek3",
+      "quantity": 76,
+      "amountUnit": "db"
+    },
+    {
+      "id": 4,
+      "productName": "Dummy1",
+      "quantity": 98,
+      "amountUnit": "kg"
+    },
+    {
+      "id": 5,
+      "productName": "MockData",
+      "quantity": 98,
+      "amountUnit": "kg"
+    },
+    {
+      "id": 6,
+      "productName": "Prod2",
+      "quantity": 98,
+      "amountUnit": "kg"
+    }
+  ]
+}

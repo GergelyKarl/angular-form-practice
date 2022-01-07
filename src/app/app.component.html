@@ -1,8 +1,16 @@
-<ng-container [formGroup]="form">
-  <app-basic-info ></app-basic-info>
+<div class="btn__container">
+  <button mat-raised-button color="accent" (click)="fillWithDummyData()">
+    Auto Fill
+  </button>
+  <button mat-raised-button color="warn" (click)="resetForm()" class="resetBtn">
+    Reset
+  </button>
+</div>
+<ng-container [formGroup]="form" class="container">
+  <app-basic-info></app-basic-info>
   <app-billing></app-billing>
 
-  <section class="checkb">
+  <section class="checkbox">
     <mat-checkbox
       formControlName="hasShippingInformation"
       class="example-margin"
@@ -11,8 +19,19 @@
   </section>
 
   <app-shipping *ngIf="!form.value.hasShippingInformation"></app-shipping>
+  <app-add-product></app-add-product>
   <app-products></app-products>
 </ng-container>
-<button (click)="qwe()">asdasd</button>
+<div class="btn__container">
+  <button
+    class="saveBtn"
+    mat-raised-button
+    color="primary"
+    (click)="printResult()"
+    [disabled]="form.invalid"
+  >
+    Mentés
+  </button>
+</div>
 
-{{ form.value | json }}
+<!-- {{ form.value | json }} -->

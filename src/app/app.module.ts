@@ -2,35 +2,28 @@ import { NgModule } from '@angular/core';
 import {
   FormBuilder,
   FormGroupDirective,
-  FormsModule,
   ReactiveFormsModule,
 } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
 import { MAT_DATE_FORMATS } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxMatDateFnsDateModule } from 'ngx-mat-datefns-date-adapter';
+import { AddProductComponent } from './add-product/add-product.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BasicInfoComponent } from './basic-info/basic-info.component';
 import { BillingComponent } from './billing/billing.component';
 import { ProductsComponent } from './products/products.component';
 import { ShippingComponent } from './shipping/shipping.component';
-import { AddProductComponent } from './add-product/add-product.component';
-
-export const MAT_DATE_FNS_DATE_FORMATS = {
-  parse: {
-    dateInput: 'dd/MM/yyyy',
-  },
-  display: {
-    dateInput: 'dd/MM/yyyy',
-    monthYearLabel: 'MMM yyyy',
-    dateA11yLabel: 'LL',
-    monthYearA11yLabel: 'MMMM yyyy',
-  },
-};
+import { MatTableModule } from '@angular/material/table';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MAT_DATE_FNS_DATE_FORMATS } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -45,12 +38,16 @@ export const MAT_DATE_FNS_DATE_FORMATS = {
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatInputModule,
     MatCheckboxModule,
-    FormsModule,
     ReactiveFormsModule,
     MatDatepickerModule,
     NgxMatDateFnsDateModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatTableModule,
+    MatAutocompleteModule,
   ],
 
   providers: [

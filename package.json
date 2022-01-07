@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "db":"json-server db.json --watch"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +25,7 @@
     "@angular/router": "~11.2.14",
     "date-fns": "^2.28.0",
     "date-fns-tz": "^1.2.2",
+    "json-server": "^0.17.0",
     "ngx-mat-datefns-date-adapter": "^11.2.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

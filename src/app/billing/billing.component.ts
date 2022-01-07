@@ -15,8 +15,4 @@ export class BillingComponent implements OnInit {
       'billingInformation'
     ) as FormGroup;
   }
-
-  qwe(x) {
-    console.log(x);
-  }
 }

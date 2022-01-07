@@ -1,1 +1,36 @@
-<p>add-product works!</p>
+<h1>Add Product:</h1>
+
+<form class="add__form" [formGroup]="productFormGroup">
+  <mat-form-field class="add__name">
+    <mat-label>name</mat-label>
+    <input matInput formControlName="name" [matAutocomplete]="auto" />
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let item of filteredArray" [value]="item">
+        {{ item }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+  <mat-form-field class="add__quantity">
+    <mat-label>quantity</mat-label>
+    <input matInput placeholder="Quantity" formControlName="quantity" />
+  </mat-form-field>
+
+  <mat-form-field class="add__unit">
+    <mat-label>Units</mat-label>
+    <mat-select name="food" formControlName="amountUnit">
+      <mat-option [value]="unit" *ngFor="let unit of units">
+        {{ unit }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="addProduct(productFormGroup.value)"
+    [disabled]="productFormGroup.invalid"
+  >
+    Add
+  </button>
+</form>

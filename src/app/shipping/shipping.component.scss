@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 80px;
-  width: 60%;
+  width: 100%;
 }
 
 .city__container {
@@ -11,7 +11,7 @@
 }
 
 .billing__zip {
-  width: 5%;
+  width: 8%;
   margin-bottom: 8px;
 }
 
@@ -21,4 +21,8 @@
 
 .billing__comment {
   margin-bottom: 8px;
+}
+
+h1 {
+  margin: 50px 0;
 }
