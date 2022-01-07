@@ -1,0 +1,28 @@
+.shipping__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.city__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.billing__zip {
+  width: 8%;
+  margin-bottom: 8px;
+}
+
+.billing__name {
+  margin-bottom: 8px;
+}
+
+.billing__comment {
+  margin-bottom: 8px;
+}
+
+h1 {
+  margin: 50px 0;
+}
